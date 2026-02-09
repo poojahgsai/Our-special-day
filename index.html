@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Our Love Story ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<!-- Background Music -->
+<audio id="bgMusic" loop>
+  <source src="love-song.mp3" type="audio/mp3">
+</audio>
+
+<body>
+
+<!-- Music Overlay -->
+<div id="musicOverlay"class="section intro1" >
+  <p>Tap anywhere to begin our story ❤️</p>
+</div>
+
+<!-- INTRO -->
+<section class="section intro">
+  <h1>Our Love Story 💕</h1>
+  <p>Scroll slowly… this is us ❤️</p>
+</section>
+
+<!-- LULU MALL --> 
+ <section class="section fade">
+     <h2>🛍️ Lulu Mall, Bangalore</h2> 
+     <p> In a busy Lulu Mall,<br> two strangers crossed paths for the first time 💫 </p>
+      <div class="couple">👩‍❤️‍👨</div> 
+    </section>
+
+
+<!-- DASHING CAR -->
+<section class="section slide">
+  <h2>🚗 Dashing Car Game</h2>
+  <p>
+    We laughed like kids,<br>
+    racing dashing cars 🚗😄
+  </p>
+
+  <div class="car-wrapper move-car">
+    <div class="emoji">🚗💨</div>
+
+    <img
+      src="bumper_cars.png"
+      alt="Dashing Car Game"
+      class="story-image"
+    />
+  </div>
+</section>
+
+
+
+
+<!-- ZERO GRAVITY -->
+<section class="section float">
+  <h2>🌀 Zero Gravity</h2>
+  <p>
+    Zero gravity…<br>
+    but my heart already felt safe with you ❤️
+  </p>
+
+  <div class="gravity-wrapper move-gravity">
+    <div class="emoji">🌀</div>
+
+    <img
+      src="zero_gravity.png"
+      alt="Zero Gravity Game"
+      class="story-image"
+    />
+  </div>
+</section>
+
+
+<!-- FELL IN LOVE -->
+<section class="section heart">
+  <h2>❤️ Fell in Love</h2>
+  <p>
+    Somewhere between laughter and silence,<br>
+    I fell in love with you ❤️
+  </p>
+  <div class="big-heart">❤️</div>
+</section>
+
+<!-- ONE YEAR -->
+<section class="section fade">
+  <h2>🎉 Engaged on this very day, last year 💍✨</h2>
+  <p>
+    One year of us,<br>
+    and my heart still chooses you every day 💕
+    That day, when we got engaged 💍, felt like time slowed down just for us ✨
+With one simple yes, our hearts made a forever promise ❤️
+It wasn’t just about a ring, it was about love, trust, and choosing each other every day 💕
+From that moment on, I knew my life would always feel complete with you by my side 🥹💖
+  </p>
+</section>
+
+<!-- FINAL -->
+<section class="section final">
+  <h2>💌 Happy Valentine’s Day</h2>
+  <p>
+    Will you be my Valentine…<br>
+    today, tomorrow, and always? 💍
+  </p>
+
+  <div class="valentine-buttons">
+    <button id="yesBtn" onclick="showLove()">YES ❤️</button>
+    <button id="noBtn">NO 😏</button>
+  </div>
+
+  <p id="loveMessage"></p>
+
+  <!-- Video -->
+  <video id="loveVideo" controls playsinline>
+    <source src="love-video.mp4" type="video/mp4">
+    Your browser does not support the video.
+  </video>
+
+  <div id="storyAfterYes"></div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>

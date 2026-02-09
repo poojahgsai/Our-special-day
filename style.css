@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Comic Sans MS", cursive;
+}
+
+body {
+  background: linear-gradient(to bottom, #ffd1dc, #fff);
+  text-align: center;
+}
+
+/* VERY IMPORTANT: prevents auto scroll jumping */
+.section {
+  min-height: 100vh;
+  padding: 60px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+
+h1, h2 {
+  color: #ff4d6d;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.intro {
+  background: #ffb6c1;
+}
+.intro1 {
+  background: #f8f4f4;
+   font-size: 60px;
+}
+.couple {
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+/* ❤️ Heart */
+.big-heart {
+  font-size: 70px;
+  animation: beat 1s infinite;
+}
+
+@keyframes beat {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+/* Buttons */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  border-radius: 25px;
+  border: none;
+  font-size: 18px;
+  background-color: #ff4d6d;
+  color: white;
+  cursor: pointer;
+}
+
+.valentine-buttons {
+  position: relative;
+  height: 120px;
+  margin-top: 30px;
+}
+
+#yesBtn {
+  transition: transform 0.3s ease;
+}
+
+#noBtn {
+  position: absolute;
+  left: 120px;
+  top: 0;
+}
+
+#loveMessage {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #ff4d6d;
+}
+
+/* Video */
+#loveVideo {
+  display: none;
+  margin: 50px auto 0;
+  width: 90%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+}
+
+/* Music Overlay */
+#musicOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffb6c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 35px;
+  color: #fff;
+  z-index: 9999;
+  cursor: pointer;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Fade & slide */
+.fade {
+  animation: fadeIn 1.5s;
+}
+
+.slide {
+  animation: slideUp 1.5s;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from { transform: translateY(40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+/* Emoji */
+.emoji {
+  font-size: 45px;
+  margin-bottom: 10px;
+}
+
+/* Image */
+.story-image {
+  width: 90%;
+  max-width: 420px;
+  border-radius: 20px;
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
+}
+
+/* FIXED animation container (VERY IMPORTANT) */
+.animation-box {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 🚗 Car movement (horizontal only) */
+.move-car {
+  animation: carMove 3s infinite ease-in-out alternate;
+}
+
+@keyframes carMove {
+  from { transform: translateX(-30px); }
+  to { transform: translateX(30px); }
+}
+
+/* 🌀 Gravity movement (small vertical) */
+.move-gravity {
+  animation: gravityMove 3s infinite ease-in-out;
+}
+
+@keyframes gravityMove {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+  100% { transform: translateY(0); }
+}
+#noBtn {
+  position: absolute;
+  transition: none; /* IMPORTANT: remove smooth movement */
+}
+body.no-scroll {
+  overflow: hidden;
+}
